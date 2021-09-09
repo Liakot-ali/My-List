@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarDemo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_marginLeft="35sp"
+                android:layout_marginRight="35sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toolbarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Update Profile"
+                    android:textColor="@color/hiLightedTextWhite"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/toolbar_text" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/lay_pad"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/updateProfilePicture"
+                                android:layout_width="150sp"
+                                android:layout_height="150sp"
+                                android:layout_weight="1"
+                                android:src="@drawable/user_demo_pic"
+                                app:civ_border_color="@color/colorPrimary"
+                                app:civ_border_width="@dimen/imageViewBorder"
+                                tools:ignore="VectorDrawableCompat" />
+
+                            <Button
+                                android:id="@+id/updateEditPhotoBtn"
+                                style="@android:style/Widget.Button.Small"
+                                android:layout_width="100sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_style"
+                                android:text="Edit Photo"
+                                android:textColor="@color/hiLightedTextWhite"
+                                android:textSize="@dimen/button_text" />
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2d"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/updateFirstName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="first name"
+                                        android:inputType="text"
+                                        android:padding="@dimen/editTextPad" />
+
+                                    <EditText
+                                        android:id="@+id/updateLastName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/text_pad"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="last name"
+                                        android:inputType="text"
+                                        android:padding="@dimen/editTextPad" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/updateUserEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email: "
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/kd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone Number"
+                                        android:textColor="@color/hiLightedTextBlack"
+                                        android:textIsSelectable="true"
+                                        android:textSize="@dimen/normal_text" />
+
+                                    <EditText
+                                        android:id="@+id/updateUserPhone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="enter phone number"
+                                        android:inputType="number"
+                                        android:padding="@dimen/editTextPad" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2f"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView23r"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Work"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/updateWorkType"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="work type, e:s: Student"
+                                        android:inputType="text"
+                                        android:padding="@dimen/editTextPad" />
+
+                                    <EditText
+                                        android:id="@+id/updateWorkPlace"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/text_pad"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="work place, e:s: MIST"
+                                        android:inputType="text"
+                                        android:padding="@dimen/editTextPad" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/lay_pad">
+
+                    <Button
+                        android:id="@+id/updateUpdateBtn"
+                        style="@android:style/Widget.Button.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_style"
+                        android:text="Update"
+                        android:textColor="@color/hiLightedTextWhite"
+                        android:textSize="@dimen/button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

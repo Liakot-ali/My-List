@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My List</string>
+    <dimen name="normal_text">20sp</dimen>
+    <dimen name="headline_text">30sp</dimen>
+    <dimen name="button_text">25sp</dimen>
+    <dimen name="small_text">18sp</dimen>
+    <dimen name="toolbar_text">25sp</dimen>
+    <dimen name="corners">5sp</dimen>
+    <dimen name="strokeWidth">2sp</dimen>
+    <dimen name="editTextPad">5sp</dimen>
+    <dimen name="buttonBottomMargin">40sp</dimen>
+    <dimen name="buttonTopMargin">20sp</dimen>
+    <dimen name="buttonInnerMargin">7sp</dimen>
+    <dimen name="favLayPad">10sp</dimen>
+    <dimen name="progressBarSize">100sp</dimen>
+    <dimen name="imageViewBorder">2sp</dimen>
+    <dimen name="textBoxRadius">10sp</dimen>
+
+    <dimen name="lay_pad">15sp</dimen>
+    <dimen name="text_pad">10sp</dimen>
+    <dimen name="button_pad">10sp</dimen>
+    <dimen name="list_pad">7sp</dimen>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>

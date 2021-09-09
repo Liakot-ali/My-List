@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190sp"
+    android:gravity="bottom"
+    android:padding="10sp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/lay_pad"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/navProfilePic"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                app:civ_border_width="@dimen/imageViewBorder"
+                android:padding="3sp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/user_demo_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/text_pad"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/navUserFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+
+                        android:text="User First Name"
+                        android:textColor="@color/buttonColor"
+                        android:textSize="@dimen/normal_text"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/navUserWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/small_text"
+                        android:textColor="@color/darkBlack"
+                        android:text="Type, Place" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/navUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingLeft="@dimen/text_pad"
+            android:text="useremail123@example.com"
+            android:textColor="@color/buttonColor"
+            android:textSize="@dimen/small_text" />
+
+    </LinearLayout>
+</LinearLayout>

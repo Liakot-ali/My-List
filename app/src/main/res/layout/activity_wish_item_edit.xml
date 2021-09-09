@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WishItemEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarDemo"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_marginLeft="35sp"
+                    android:layout_marginRight="35sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toolbarTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit Wish Item"
+                        android:textColor="@color/hiLightedTextWhite"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/toolbar_text" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginTop="30sp"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Edit title.."
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/editWishTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="Title here.."
+                                        android:inputType="text"
+                                        android:padding="@dimen/editTextPad" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2f"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Edit details"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <EditText
+                                    android:id="@+id/editWish"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_style200"
+                                    android:ems="10"
+                                    android:gravity="bottom"
+                                    android:hint="Write here.."
+                                    android:inputType="textMultiLine"
+                                    android:maxHeight="200sp"
+                                    android:padding="@dimen/editTextPad" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:layout_marginBottom="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:orientation="vertical"
+                            android:padding="@dimen/text_pad">
+
+                            <CheckBox
+                                android:id="@+id/updateWishTimeCheck"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="update date and time"
+                                android:textColor="@color/buttonColor"
+                                android:textSize="@dimen/small_text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/lay_pad"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/updateWish"
+                        style="@android:style/Widget.Button.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:text="Update"
+                        android:textColor="@color/hiLightedTextWhite"
+                        android:textSize="@dimen/button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

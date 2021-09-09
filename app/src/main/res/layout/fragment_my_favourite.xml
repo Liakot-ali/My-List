@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginTop="@dimen/favLayPad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:layout_marginBottom="@dimen/favLayPad"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/favUserFirstName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="Hey..!"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/headline_text" />
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Write your favourite here.."
+                                    android:textColor="@color/nonHiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:layout_marginBottom="@dimen/favLayPad"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Favourite topic"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <EditText
+                                    android:id="@+id/favouriteTopicET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_style40"
+                                    android:ems="10"
+                                    android:hint="Topic here..."
+                                    android:inputType="text"
+                                    android:padding="@dimen/editTextPad" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:layout_marginBottom="@dimen/favLayPad"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Favourite item name"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <EditText
+                                    android:id="@+id/favouriteNameET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_style40"
+                                    android:ems="10"
+                                    android:hint="Name of my favourite..."
+                                    android:inputType="textPersonName"
+                                    android:padding="@dimen/editTextPad" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:layout_marginBottom="@dimen/favLayPad"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Favourite reason"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <EditText
+                                    android:id="@+id/favouriteHintET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_style100"
+                                    android:ems="10"
+                                    android:gravity="bottom"
+                                    android:hint="Reason here..."
+                                    android:inputType="textMultiLine"
+                                    android:maxHeight="100sp"
+                                    android:padding="@dimen/editTextPad" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Favourite
+        Photo"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/headline_text" />
+
+                                <ImageView
+                                    android:id="@+id/favouriteImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="90sp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/search_view_style"
+                                    android:backgroundTint="@color/shadowStart"
+                                    app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
+                                    tools:ignore="VectorDrawableCompat" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/favLayPad"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lay_pad"
+                        android:layout_marginRight="@dimen/lay_pad"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/addThisFavouriteBtn"
+                            style="@android:style/Widget.Button.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/buttonInnerMargin"
+                            android:layout_marginBottom="@dimen/lay_pad"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_style"
+                            android:text="Add Favourite"
+                            android:textColor="@color/hiLightedTextWhite"
+                            android:textSize="@dimen/button_text" />
+
+                        <Button
+                            android:id="@+id/gotoFavListBtn"
+                            style="@android:style/Widget.Button.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/buttonInnerMargin"
+                            android:layout_marginBottom="@dimen/lay_pad"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_style"
+                            android:text="Favourite List"
+                            android:textColor="@color/hiLightedTextWhite"
+                            android:textSize="@dimen/button_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

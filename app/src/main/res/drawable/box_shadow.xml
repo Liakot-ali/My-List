@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <!--- for background view  -->
+            <item>
+                <shape>
+                    <corners android:radius="10dp"/>
+                    <solid android:color="@color/shadowStart"/>
+                    <gradient android:angle="100"
+
+                        android:startColor="@color/fullWhite"
+                        android:endColor="@color/darkBlack"/>
+
+                </shape>
+            </item>
+            <!--- for foreground view    -->
+
+            <item android:bottom="3dp"
+                android:left="3dp"
+                android:right="3dp">
+                <shape>
+                    <solid android:color="@color/buttonColor"/>
+                    <corners android:radius="10sp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

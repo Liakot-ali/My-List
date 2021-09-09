@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/addWish"
+            android:icon="@drawable/nav_add_wish"
+            android:title="Add Wish" />
+        <item
+            android:id="@+id/myFavourite"
+            android:icon="@drawable/nav_my_favourite"
+            android:title="Add Favourite" />
+        <item
+            android:id="@+id/mySecrets"
+            android:icon="@drawable/nav_my_secrets"
+            android:title="Add Secret" />
+    </group>
+
+    <item android:title="Other"
+        >
+        <menu>
+            <item
+                android:id="@+id/aboutMe"
+                android:icon="@drawable/nav_about_me"
+                android:title="About Me" />
+            <item
+                android:id="@+id/developer"
+                android:icon="@drawable/developer"
+                android:title="Developer" />
+            <item
+                android:id="@+id/signOut"
+                android:icon="@drawable/sign_out"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+</menu>

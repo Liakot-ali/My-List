@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkBlack">#000000</color>
+    <color name="fullWhite">#FFFFFF</color>
+    <color name="windowBackgroundColor">#129AE8</color>
+    <color name="backgroundColor">#ffffff</color>
+    <color name="textColor">#1A1A1A</color>
+    <color name="shadowStart">#DFDFDF</color>
+    <color name="nonHiLightedTextWhite">#B4E2FC</color>
+    <color name="hiLightedTextWhite">#ffffff</color>
+    <color name="hiLightedTextBlack">#000000</color>
+    <color name="nonHiLightedTextBlack">#868686</color>
+    <color name="buttonColor">#007AD0</color>
+    <color name="colorPrimary">#129AE8</color>
+
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhiteGray">#92FFFFFF</color>
+    <color name="colorAccent">#B388FF</color>
+
+</resources>

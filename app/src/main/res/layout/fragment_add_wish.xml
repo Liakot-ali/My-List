@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/wishUserFirstName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Hey..!"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/headline_text" />
+
+                                <TextView
+                                    android:id="@+id/textViewUp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Please Tell Me what are you
+                        think about?"
+                                    android:textColor="@color/nonHiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lay_pad"
+                            android:layout_marginTop="@dimen/lay_pad"
+                            android:layout_marginRight="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wish title"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/addWishTittleET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/edit_text_style40"
+                                        android:hint="Wish title here.."
+                                        android:inputType="text"
+                                        android:padding="@dimen/editTextPad" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout2f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/lay_pad"
+                            android:background="@android:drawable/dialog_holo_light_frame">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/text_pad">
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wish details"
+                                    android:textColor="@color/hiLightedTextBlack"
+                                    android:textIsSelectable="true"
+                                    android:textSize="@dimen/normal_text" />
+
+                                <EditText
+                                    android:id="@+id/addWishStringET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edit_text_style200"
+                                    android:ems="10"
+                                    android:gravity="bottom"
+                                    android:hint="Write here.."
+                                    android:inputType="textMultiLine"
+                                    android:maxHeight="200sp"
+                                    android:padding="@dimen/editTextPad" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/lay_pad"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/addThisWishBtn"
+                            style="@android:style/Widget.Button.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/buttonInnerMargin"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_style"
+                            android:text="Add Wish"
+                            android:textColor="@color/hiLightedTextWhite"
+                            android:textSize="@dimen/button_text" />
+
+                        <Button
+                            android:id="@+id/gotoWishListBtn"
+                            style="@android:style/Widget.Button.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/buttonInnerMargin"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_style"
+                            android:text="Wish List"
+                            android:textColor="@color/hiLightedTextWhite"
+                            android:textSize="@dimen/button_text" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
